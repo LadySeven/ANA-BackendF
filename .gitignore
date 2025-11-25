@@ -10,8 +10,6 @@ __pycache__/
 
 # TensorFlow cache
 tfhub_cache/
-*.h5
-*.pkl
 
 # Local database
 *.db
