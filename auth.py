@@ -11,7 +11,7 @@ load_dotenv()
 pwd_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
 
 # JWT settings
-SECRET_KEY = os.getenv("SECRET_KEY", "ana-app-super-secret-key-2024-change-in-production")
+SECRET_KEY = os.getenv("SECRET_KEY", "ana-app-super-secret-key")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
