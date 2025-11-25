@@ -56,7 +56,7 @@ print("Loading model...")
 _script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Load trained classifier (safer: compile=False to avoid deserialization/compile issues)
-model_path = os.path.join(_script_dir, 'merged_best.h5')
+model_path = os.path.join(_script_dir, 'merged_best_tf211.h5')
 print("Loading classifier model from:", model_path)
 try:
     model = tf.keras.models.load_model(model_path, compile=False)
