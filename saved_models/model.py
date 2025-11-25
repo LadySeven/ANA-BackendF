@@ -3,7 +3,8 @@
 # ============================================================
 
 import os
-os.environ['TFHUB_CACHE_DIR'] = r'C:\Users\A\Documents\finalANA\tfhub_cache'
+os.environ['TFHUB_CACHE_DIR'] = './tfhub_cache'
+
 import numpy as np
 import tensorflow as tf
 import tensorflow_hub as hub
@@ -73,7 +74,7 @@ print(f"Label encoder loaded - Classes: {label_encoder.classes_}")
 
 # Load YAMNet
 print("Loading YAMNet feature extractor...")
-yamnet_model = hub.load('https://tfhub.dev/google/yamnet/1')
+yamnet_model = hub.load('./saved_models/yamnet')
 print("YAMNet loaded.\n")
 
 
